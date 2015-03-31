@@ -1,0 +1,17 @@
+Name:                backprop-mnist
+Version:             1.0
+Description:         Implementacja algorytmu propagacji wstecznej do rozpoznawania cyfr z bazy MNIST
+Author:              Damian Trojnar
+Build-Type:          Simple
+Cabal-Version:       >=1.6
+
+Executable backprop-mnist
+  Main-Is:          Main.hs
+  GHC-Options:      -Werror
+                    -threaded
+                    -O2
+  Build-Depends:    base == 4.*, random == 1.0.*, hmatrix == 0.16.*,
+                    split == 0.2.*, binary == 0.5.*,
+                    bytestring == 0.9.*,
+                    gd == 3000.*
+
